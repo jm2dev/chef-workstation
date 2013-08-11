@@ -2,5 +2,6 @@
   "id": "jm",
   "password": "$1$KeqLBQj8$7RYPxMq2rjt1fXsdWmhaZ/",  
   "comment": "Jose Miguel",
-  "shell": "\/usr\/bin\/zsh"
+  "shell": "\/usr\/bin\/zsh",
+  "groups": ["wheel"]
 }

@@ -59,8 +59,7 @@ Data bags
 
 ::
 
-   knife data bag create users
-   knife data bag from file data_bags/users.json
+   knife data bag from file data_bags/users/userid.json
 
 Issues
 ======
