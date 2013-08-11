@@ -6,6 +6,12 @@ Chef :: notes
 Hosted chef with opscode
 ------------------------
 
+.. sidebar:: Contents
+
+    .. contents::
+
+.. sectnum::
+
 Workstation setup
 =================
 
@@ -48,3 +54,24 @@ Bootstrap
 
    knife bootstrap jm2dev.cloud.tilaa.eu --ssh-user YYY --ssh-password XXX --ssh-port 2222 --run-list "role[ci]"
 
+Issues
+======
+
+java not found
+--------------
+
+It seems the java recipe does not set ``/etc/alternatives`` properly in
+fedora when we have installed the openjdk package.
+
+::
+
+   /etc/alternatives/java -> /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
+   /etc/alternatives/javac -> /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.25-2.3.12.3.fc19.x86_64/bin/javac
+   /etc/alternatives/javac.1.gz -> /usr/share/man/man1/javac-java-1.7.0-openjdk-1.7.0.25-2.3.12.3.fc19.x86_64.1.gz
+
+firewall
+--------
+
+`fedora firewall`_.
+
+.. _fedora firewall: https://fedoraproject.org/wiki/FirewallD#Using_firewall-cmd

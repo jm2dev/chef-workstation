@@ -5,10 +5,14 @@
   "default_attributes": {
   },
   "override_attributes": {
+      "java": {"jdk_version": "7"},
+      "jenkins": {"java_home": "/usr/lib/jvm/java"}
   },
   "chef_type": "role",
   "run_list": [
     "recipe[selinux::permissive]",
+    "recipe[java::openjdk]",  
+    "recipe[yumrepo::jenkins]",
     "recipe[jenkins]"
   ],
   "env_run_lists": {
