@@ -1,5 +1,6 @@
 {
   "id": "jm",
+  "password": "$1$KeqLBQj8$7RYPxMq2rjt1fXsdWmhaZ/",  
   "comment": "Jose Miguel",
-  "removed": "false"
+  "shell": "\/usr\/bin\/zsh"
 }
