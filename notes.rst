@@ -54,6 +54,14 @@ Bootstrap
 
    knife bootstrap jm2dev.cloud.tilaa.eu --ssh-user YYY --ssh-password XXX --ssh-port 2222 --run-list "role[ci]"
 
+Data bags
+=========
+
+::
+
+   knife data bag create users
+   knife data bag from file data_bags/users.json
+
 Issues
 ======
 
